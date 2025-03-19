@@ -25,6 +25,14 @@ export class Tweakable {
   change(){
 
   }
+
+  hide(){
+    this.pane.hidden = true;
+  }
+
+  show(){
+    this.pane.hidden = false;
+  }
   
   private getTweakableProperties(): TweakableProperty {
     const properties: TweakableProperty = {};
